@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div id="wrapper">
+class App extends React.Component {
+    render() {
+        return (
+            <div id="wrapper">
 
       <section id="main">
         <header>
           <span className="avatar"><img src="images/avatar.jpg" alt="" /></span>
-          <h1>Jane Doe</h1>
+          <h1>Leonardo Rocha Pinto</h1>
           <p>Senior Psychonautics Engineer</p>
         </header>
         <hr />
@@ -22,35 +23,15 @@ function App() {
               <input type="email" name="email" id="email" placeholder="Email" />
             </div>
             <div className="field">
-              <select name="department" id="department">
-                <option value="">Department</option>
-                <option value="sales">Sales</option>
-                <option value="tech">Tech Support</option>
-                <option value="null">/dev/null</option>
-              </select>
-            </div>
-            <div className="field">
-              <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-            </div>
-            <div className="field">
-              <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-            </div>
-            <div className="field">
-              <label>But are you a robot?</label>
-              <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-              <input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
             </div>
           </div>
-          <ul className="actions special">
-            <li><a href="#" className="button">Get Started</a></li>
-          </ul>
         </form>
         <hr />
         <footer>
           <ul className="icons">
-            <li><a href="#" className="icon brands fa-twitter">Twitter</a></li>
-            <li><a href="#" className="icon brands fa-instagram">Instagram</a></li>
-            <li><a href="#" className="icon brands fa-facebook-f">Facebook</a></li>
+            <li><a href="https://github.com/leorochapinto" className="icon brands fa-github">Git Hub</a></li>
+            <li><a href="https://www.instagram.com/rochaa.leo/" className="icon brands fa-instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/leonardo.rocha.94617" className="icon brands fa-facebook-f">Facebook</a></li>
           </ul>
         </footer>
       </section>
@@ -62,7 +43,8 @@ function App() {
       </footer>
 
   </div>
-  );
+        )
+    }
 }
-
 export default App;
+
