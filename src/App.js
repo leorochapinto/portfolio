@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import ButtonComponent from "./Components/ButtonComponent";
 
 class App extends React.Component {
   render() {
@@ -22,43 +23,45 @@ class App extends React.Component {
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2011 - present"
+              date="2019 - present"
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Creative Director
-                  </h3>
+                  <p>JExperts</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    Miami, FL
+                    Full Stack trainee developer since January 2019, working
+                    with react, java, node, javascript, html and css and some
+                    APIs
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, Project
-                    Management, Team Leading
-                  </p>
                 </div>
               </div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2010 - 2011"
+              date="June 2019"
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Art Director
-                  </h3>
+                  <p>Stock Control Software</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    San Francisco, CA
+                    Software developed in Java, for object-oriented programming
+                    grid. What, the intent is to get inventory control storing
+                    into object classes
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, SEO,
-                    Online Marketing
-                  </p>
+                  <br></br>
+                  <h5>
+                    <ButtonComponent>
+                      <a href="https://github.com/leorochapinto/Stock-Control">
+                        View Source Code
+                      </a>
+                    </ButtonComponent>
+                  </h5>
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -70,16 +73,16 @@ class App extends React.Component {
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Art Director
-                  </h3>
+                  <p>Income Tax Software</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    San Francisco, CA
+                    Software produced in Java for academic purposes, which
+                    serves to control expenses, targets and income tax
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, SEO,
-                    Online Marketing
-                  </p>
+                  <br></br>
+                  <a href="https://github.com/leorochapinto/Financial-Control">
+                    <ButtonComponent>View Source Code</ButtonComponent>
+                  </a>
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -91,16 +94,13 @@ class App extends React.Component {
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Art Director
-                  </h3>
+                  <p>JExperts</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    San Francisco, CA
+                    Full Stack trainee developer since January 2019, working
+                    with react, java, node, javascript, html and css and some
+                    APIs
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, SEO,
-                    Online Marketing
-                  </p>
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -112,16 +112,13 @@ class App extends React.Component {
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Art Director
-                  </h3>
+                  <p>JExperts</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    San Francisco, CA
+                    Full Stack trainee developer since January 2019, working
+                    with react, java, node, javascript, html and css and some
+                    APIs
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, SEO,
-                    Online Marketing
-                  </p>
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -133,16 +130,13 @@ class App extends React.Component {
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Art Director
-                  </h3>
+                  <p>JExperts</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    San Francisco, CA
+                    Full Stack trainee developer since January 2019, working
+                    with react, java, node, javascript, html and css and some
+                    APIs
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, SEO,
-                    Online Marketing
-                  </p>
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -154,25 +148,17 @@ class App extends React.Component {
             >
               <div className="card">
                 <div className="card-body">
-                  <h3 className="vertical-timeline-element-title">
-                    Art Director
-                  </h3>
+                  <p>JExperts</p>
+                  <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    San Francisco, CA
+                    Full Stack trainee developer since January 2019, working
+                    with react, java, node, javascript, html and css and some
+                    APIs
                   </h4>
-                  <p>
-                    Creative Direction, User Experience, Visual Design, SEO,
-                    Online Marketing
-                  </p>
                 </div>
               </div>
             </VerticalTimelineElement>
-            <VerticalTimelineElement
-              iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-              icon
-            />
           </VerticalTimeline>
-          <h2>Extra Stuff!</h2>
           <form method="post" action="#">
             <div className="fields">
               <div className="field">
@@ -191,6 +177,7 @@ class App extends React.Component {
           </form>
           <hr />
           <footer>
+            <p>Find me on: </p>
             <ul className="icons">
               <li>
                 <a
@@ -222,10 +209,7 @@ class App extends React.Component {
 
         <footer id="footer">
           <ul className="copyright">
-            <li>&copy; Jane Doe</li>
-            <li>
-              Design: <a href="http://html5up.net">HTML5 UP</a>
-            </li>
+            <li>&copy; Leonardo Rocha Pinto</li>
           </ul>
         </footer>
       </div>
