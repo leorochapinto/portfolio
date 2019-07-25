@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="wrapper">
-        <section id="main" style={{ width: "800px" }}>
+        <section id="main" style={{ width: "900px" }}>
           <header>
             <span className="avatar">
               <img src="images/avatar.jpg" alt="" />
