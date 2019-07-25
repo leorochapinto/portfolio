@@ -1,6 +1,7 @@
 import React from "react";
 import "react-vertical-timeline-component/style.min.css";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import classNames from "classnames/bind";
 import PropTypes from "prop-types";
 
 class RowTimelineComponent extends React.Component {

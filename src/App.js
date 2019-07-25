@@ -4,6 +4,9 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ButtonComponent from "./Components/ButtonComponent";
 import RowTimelineComponent from "./Components/RowTimelineComponent";
+import FontAwesomeEnum from "./Enum/FontAwesomeEnum";
+import classNames from "classnames/bind";
+import IconComponent from "./Components/IconComponent";
 
 class App extends React.Component {
   render() {
@@ -19,7 +22,14 @@ class App extends React.Component {
           </header>
           <hr />
           <VerticalTimeline>
-            <RowTimelineComponent date="2019 - present">
+            <RowTimelineComponent
+              icon={
+                <IconComponent
+                  className={classNames(FontAwesomeEnum.FA_GLOBE, "fa-app")}
+                />
+              }
+              date="2019 - present"
+            >
               <div className="card">
                 <div className="card-body">
                   <p>JExperts</p>
@@ -32,7 +42,14 @@ class App extends React.Component {
                 </div>
               </div>
             </RowTimelineComponent>
-            <RowTimelineComponent date="June - 2019">
+            <RowTimelineComponent
+              icon={
+                <IconComponent
+                  className={classNames(FontAwesomeEnum.FA_FILE_CODE, "fa-app")}
+                />
+              }
+              date="June - 2019"
+            >
               <div className="card">
                 <div className="card-body">
                   <p>Stock Control Software</p>
@@ -53,7 +70,14 @@ class App extends React.Component {
                 </div>
               </div>
             </RowTimelineComponent>
-            <RowTimelineComponent>
+            <RowTimelineComponent
+              icon={
+                <IconComponent
+                  className={classNames(FontAwesomeEnum.FA_FILE_CODE, "fa-app")}
+                />
+              }
+              date="November - 2018"
+            >
               <div className="card">
                 <div className="card-body">
                   <p>Income Tax Software</p>
@@ -72,52 +96,16 @@ class App extends React.Component {
             <RowTimelineComponent>
               <div className="card">
                 <div className="card-body">
-                  <p>JExperts</p>
+                  <p>Array Java</p>
                   <br></br>
                   <h4 className="vertical-timeline-element-subtitle">
-                    Full Stack trainee developer since January 2019, working
-                    with react, java, node, javascript, html and css and some
-                    APIs
+                    Software designed to better learn how to handle a Java
+                    Array, was one of the first software I produced
                   </h4>
-                </div>
-              </div>
-            </RowTimelineComponent>
-            <RowTimelineComponent>
-              <div className="card">
-                <div className="card-body">
-                  <p>JExperts</p>
                   <br></br>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    Full Stack trainee developer since January 2019, working
-                    with react, java, node, javascript, html and css and some
-                    APIs
-                  </h4>
-                </div>
-              </div>
-            </RowTimelineComponent>
-            <RowTimelineComponent>
-              <div className="card">
-                <div className="card-body">
-                  <p>JExperts</p>
-                  <br></br>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    Full Stack trainee developer since January 2019, working
-                    with react, java, node, javascript, html and css and some
-                    APIs
-                  </h4>
-                </div>
-              </div>
-            </RowTimelineComponent>
-            <RowTimelineComponent>
-              <div className="card">
-                <div className="card-body">
-                  <p>JExperts</p>
-                  <br></br>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    Full Stack trainee developer since January 2019, working
-                    with react, java, node, javascript, html and css and some
-                    APIs
-                  </h4>
+                  <a href="https://github.com/leorochapinto/Financial-Control">
+                    <ButtonComponent>View Source Code</ButtonComponent>
+                  </a>
                 </div>
               </div>
             </RowTimelineComponent>
