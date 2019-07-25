@@ -1,11 +1,9 @@
 import React from "react";
 import "./App.css";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ButtonComponent from "./Components/ButtonComponent";
+import RowTimelineComponent from "./Components/RowTimelineComponent";
 
 class App extends React.Component {
   render() {
@@ -21,12 +19,7 @@ class App extends React.Component {
           </header>
           <hr />
           <VerticalTimeline>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2019 - present"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-              icon
-            >
+            <RowTimelineComponent date="2019 - present">
               <div className="card">
                 <div className="card-body">
                   <p>JExperts</p>
@@ -38,13 +31,8 @@ class App extends React.Component {
                   </h4>
                 </div>
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="June 2019"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-              icon
-            >
+            </RowTimelineComponent>
+            <RowTimelineComponent date="June - 2019">
               <div className="card">
                 <div className="card-body">
                   <p>Stock Control Software</p>
@@ -64,13 +52,8 @@ class App extends React.Component {
                   </h5>
                 </div>
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2008 - 2010"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-              icon
-            >
+            </RowTimelineComponent>
+            <RowTimelineComponent>
               <div className="card">
                 <div className="card-body">
                   <p>Income Tax Software</p>
@@ -85,13 +68,8 @@ class App extends React.Component {
                   </a>
                 </div>
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2006 - 2008"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-              icon
-            >
+            </RowTimelineComponent>
+            <RowTimelineComponent>
               <div className="card">
                 <div className="card-body">
                   <p>JExperts</p>
@@ -103,13 +81,8 @@ class App extends React.Component {
                   </h4>
                 </div>
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              date="April 2013"
-              iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-              icon
-            >
+            </RowTimelineComponent>
+            <RowTimelineComponent>
               <div className="card">
                 <div className="card-body">
                   <p>JExperts</p>
@@ -121,13 +94,8 @@ class App extends React.Component {
                   </h4>
                 </div>
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              date="November 2012"
-              iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-              icon
-            >
+            </RowTimelineComponent>
+            <RowTimelineComponent>
               <div className="card">
                 <div className="card-body">
                   <p>JExperts</p>
@@ -139,13 +107,8 @@ class App extends React.Component {
                   </h4>
                 </div>
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              date="2002 - 2006"
-              iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-              icon
-            >
+            </RowTimelineComponent>
+            <RowTimelineComponent>
               <div className="card">
                 <div className="card-body">
                   <p>JExperts</p>
@@ -157,7 +120,7 @@ class App extends React.Component {
                   </h4>
                 </div>
               </div>
-            </VerticalTimelineElement>
+            </RowTimelineComponent>
           </VerticalTimeline>
           <form method="post" action="#">
             <div className="fields">
