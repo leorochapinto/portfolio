@@ -18,7 +18,7 @@ class App extends React.Component {
               <img src="images/avatar.jpg" alt="" />
             </span>
             <h1>Leonardo Rocha Pinto</h1>
-            <p>Senior Psychonautics Engineer</p>
+            <p>Developer Front & Backend</p>
           </header>
           <hr />
           <VerticalTimeline>
@@ -71,12 +71,40 @@ class App extends React.Component {
               </div>
             </RowTimelineComponent>
             <RowTimelineComponent
+              date="November 17,18 - 2018"
+              icon={
+                <IconComponent
+                  className={classNames(
+                    FontAwesomeEnum.FA_ADDRESS_BOOK,
+                    "fa-app"
+                  )}
+                />
+              }
+            >
+              <div className="card">
+                <div className="card-body">
+                  <p>PHP from basic to database</p>
+                  <br></br>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    16 Hours PHP course at ACATE, held from November 17 and 18,
+                    2018. In which a series of practical exercises are developed
+                    from the introduction of PHP to the creation of MySQL
+                    tables. The link bellow for more course informations:
+                  </h4>
+                  <br></br>
+                  <a href="http://bigbossweb.com.br/">
+                    <ButtonComponent>View Course</ButtonComponent>
+                  </a>
+                </div>
+              </div>
+            </RowTimelineComponent>
+            <RowTimelineComponent
               icon={
                 <IconComponent
                   className={classNames(FontAwesomeEnum.FA_FILE_CODE, "fa-app")}
                 />
               }
-              date="November - 2018"
+              date="September - 2018"
             >
               <div className="card">
                 <div className="card-body">
