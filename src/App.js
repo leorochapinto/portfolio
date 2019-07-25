@@ -93,7 +93,14 @@ class App extends React.Component {
                 </div>
               </div>
             </RowTimelineComponent>
-            <RowTimelineComponent>
+            <RowTimelineComponent
+              date="June - 2018"
+              icon={
+                <IconComponent
+                  className={classNames(FontAwesomeEnum.FA_FILE_CODE, "fa-app")}
+                />
+              }
+            >
               <div className="card">
                 <div className="card-body">
                   <p>Array Java</p>
@@ -103,7 +110,7 @@ class App extends React.Component {
                     Array, was one of the first software I produced
                   </h4>
                   <br></br>
-                  <a href="https://github.com/leorochapinto/Financial-Control">
+                  <a href="https://github.com/leorochapinto/Array-Java">
                     <ButtonComponent>View Source Code</ButtonComponent>
                   </a>
                 </div>
