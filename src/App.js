@@ -139,6 +139,14 @@ class App extends React.Component {
             <ul className="icons">
               <li>
                 <a
+                  href="https://www.linkedin.com/in/leonardo-rocha-pinto-19188818b/"
+                  className="icon brands fa-linkedin"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://github.com/leorochapinto"
                   className="icon brands fa-github"
                 >
