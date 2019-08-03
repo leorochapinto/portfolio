@@ -200,7 +200,6 @@ class App extends React.Component {
             </ul>
           </footer>
         </section>
-
         <footer id="footer">
           <ul className="copyright">
             <li>&copy; Leonardo Rocha Pinto</li>
