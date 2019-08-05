@@ -7,6 +7,7 @@ import RowTimelineComponent from "./Components/RowTimelineComponent";
 import FontAwesomeEnum from "./Enum/FontAwesomeEnum";
 import classNames from "classnames/bind";
 import IconComponent from "./Components/IconComponent";
+import Dotdotdot from "react-dotdotdot";
 
 class App extends React.Component {
   render() {
@@ -21,6 +22,13 @@ class App extends React.Component {
             <p>Developer Front & Backend</p>
           </header>
           <hr />
+          <Dotdotdot clamp="auto">
+            <div>
+              Abaixo você encontrará alguns projetos dos quais desenvolvi,
+              minhas experiências profissionais e cursos que participei, em
+              ordem cronológica:
+            </div>
+          </Dotdotdot>
           <VerticalTimeline>
             <RowTimelineComponent
               icon={
@@ -145,6 +153,21 @@ class App extends React.Component {
               </div>
             </RowTimelineComponent>
           </VerticalTimeline>
+          <div>
+            <Dotdotdot clamp="auto">
+              <p>Um pouco mais sobre mim...</p>
+              <br></br>
+              <div>
+                Me chamo Leonardo Rocha Pinto, tenho 20 anos e sou estudante de
+                Sistemas de Informação na UNISUL. Fiz cursos de inglês por um
+                total de 6 anos, e comecei a atuar no mercado como desenvolvedor
+                em janeiro de 2019. Desde então tenho experiências com: React,
+                AngularJS, Java, Node, MongoDB e uma série de API's.
+              </div>
+              <br></br>
+              <p>Entre em contato comigo abaixo:</p>
+            </Dotdotdot>
+          </div>
           <form method="post" action="#">
             <div className="fields">
               <div className="field">
