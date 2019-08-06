@@ -1,3 +1,9 @@
+.font-style {
+  font-family: "Lucida Console";
+  font-size: 20px;
+  text-transform: none;
+}
+
 .vertical-timeline::before {
   content: "";
   position: absolute;

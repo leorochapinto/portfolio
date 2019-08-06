@@ -22,7 +22,7 @@ class App extends React.Component {
             <p>Developer Front & Backend</p>
           </header>
           <hr />
-          <Dotdotdot clamp="auto">
+          <Dotdotdot className={classNames("font-style")} clamp="auto">
             <div>
               Abaixo você encontrará alguns projetos dos quais desenvolvi,
               minhas experiências profissionais e cursos que participei, em
@@ -154,7 +154,7 @@ class App extends React.Component {
             </RowTimelineComponent>
           </VerticalTimeline>
           <div>
-            <Dotdotdot clamp="auto">
+            <Dotdotdot className={classNames("font-style")} clamp="auto">
               <p>Um pouco mais sobre mim...</p>
               <br></br>
               <div>
