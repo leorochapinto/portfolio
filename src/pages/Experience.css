@@ -1,0 +1,264 @@
+.experience {
+  min-height: 100vh;
+}
+
+.experience-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 80px 20px 60px;
+  text-align: center;
+  color: white;
+}
+
+.experience-container {
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0 20px 80px;
+}
+
+/* Timeline customization */
+.vertical-timeline-element-content {
+  padding: 2em !important;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #667eea !important;
+  margin-bottom: 10px !important;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: #764ba2 !important;
+  margin-bottom: 20px !important;
+}
+
+.vertical-timeline-element-date {
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+}
+
+.vertical-timeline-element-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 0 0 4px white, 0 5px 15px rgba(102, 126, 234, 0.4) !important;
+}
+
+.vertical-timeline-element-icon i {
+  font-size: 1.5rem;
+}
+
+.timeline-description {
+  margin-top: 20px;
+}
+
+.timeline-description p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.timeline-description h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 25px 0 15px;
+  font-weight: 700;
+}
+
+.timeline-description ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.timeline-description li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+  color: #666;
+  line-height: 1.6;
+}
+
+.timeline-description li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tech-badges span {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tech-badges span:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.achievements-section {
+  margin-top: 80px;
+  padding: 60px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.achievements-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.achievement-card {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.achievement-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  background: white;
+}
+
+.achievement-icon i {
+  font-size: 2.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon i {
+  color: #667eea;
+}
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.achievement-card:hover h3 {
+  color: white;
+}
+
+.achievement-card p {
+  color: #666;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.achievement-card:hover p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 1170px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    margin-top: 15px !important;
+    text-align: left !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience-container {
+    padding: 0 10px 60px;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 1.5em !important;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.4rem !important;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .timeline-description p {
+    font-size: 0.95rem;
+  }
+
+  .timeline-description li {
+    padding-left: 25px;
+    font-size: 0.9rem;
+  }
+
+  .tech-badges span {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .achievements-section {
+    padding: 40px 20px;
+  }
+
+  .achievements-section h2 {
+    font-size: 2rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
